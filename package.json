@@ -1,0 +1,30 @@
+{
+  "name": "halloween-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "format": "prettier -w .",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neppkun/halloween-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neppkun/halloween-bot/issues"
+  },
+  "homepage": "https://github.com/Neppkun/halloween-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.5.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "prettier": "^2.7.1"
+  }
+}
