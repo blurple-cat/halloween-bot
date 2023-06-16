@@ -3,6 +3,7 @@ Halloween event Discord Bot.
 # Installation
 ### Requirements
 node.js | This was tested and ran on Node 16.
+
 npm
 ### Setup
 1-) Clone this repository.
