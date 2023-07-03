@@ -1,3 +1,5 @@
+// Written by: https://github.com/VoltrexKeyva
+
 import { Client, Collection } from 'discord.js';
 import { existsSync, lstatSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';

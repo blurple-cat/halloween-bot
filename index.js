@@ -1,3 +1,7 @@
+// Originally written by: https://github.com/Neppkun
+// Optimized by: https://github.com/VoltrexKeyva
+// This file is the optimized version of the original file.
+
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -20,7 +24,7 @@ const client = new Client({
 
 client.slashHandler = new SlashHandler(client, './commands');
 
-if (existsSync('events'))
+if (existsSync('events')) {
   await (async function loadEvents(dir) {
     for (const file of readdirSync(dir)) {
       const path = join(dir, file);
@@ -31,10 +35,11 @@ if (existsSync('events'))
 
         client[event.once ? 'once' : 'on'](
           event.name,
-          event.run.bind(null, client)
+          event.execute.bind(null, client)
         );
       }
     }
   })('events');
+}
 
 await client.login(process.env.TOKEN);

@@ -1,3 +1,7 @@
+// Originally written by: https://github.com/Neppkun
+// Optimized by: https://github.com/VoltrexKeyva
+// This file is the optimized version of the original file.
+
 import { readFileSync } from 'node:fs';
 
 export default {
